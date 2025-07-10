@@ -11,67 +11,33 @@
     <link rel="icon" href="assets/logo.png" type="image/png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet" media="all">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet"
+        media="all">
     <link media="all" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
         rel="stylesheet">
 
 </head>
 
 <body>
-    <!--header-->
-    <nav class="navbar bg-white fixed-top shadow-sm">
-        <div class="navDiv">
-            <div class="col-md-6 logo-container">
-                <img id="logo" src="assets/logo.png" alt="Dropbox logo">
-                <h3 id="logo-text">Dropbox</h3>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-white shadow-3">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex" href="#">
+                <img src="assets/logo.png" id="logo" alt="Dropbox">
+                <h2>Dropbox</h2>
+            </a>
+            <div class="navlinks d-flex align-items-center ms-auto gap-4">
+                <a href="#" class="d-none d-md-inline-block"><i class="bi bi-globe"></i></a>
+                <a href="#">Sign up</a>
+                <a href="#">Log in</a>
+                <button class="btn btn-primary d-none d-md-inline-block"><a href="#">Get started</a></button>
+                <a class="navbar-toggler d-inline-block" type="button" data-bs-toggle="offcanvas"
+                    id="nav-btn" data-bs-target="#offcanvasbody">
+                   <i class="bi bi-list"></i>
+            </a>
             </div>
-
-            <ul class="nav justify-content-end">
-                <li class="nav-item">
-                    <a class="nav-link " href="#lang" aria-label="lang" id="lang-icon"><i class="bi bi-globe"></i></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Sign up</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Log in</a>
-                </li>
-                <li class="nav-item">
-                    <a class="btn btn-primary me-3 mb-4" type="button" id="nav-btn">Get started</a>
-                </li>
-                <li id="toggler">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-
-                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-                        aria-labelledby="offcanvasNavbarLabel">
-                        <div class="offcanvas-header">
-                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                                aria-label="Close"></button>
-                        </div>
-                        <div class="offcanvas-body">
-                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#">Skills</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#">Achievements</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#">Contact Me</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-
-                </li>
-            </ul>
         </div>
     </nav>
-
+    <div class="offcanvas offcanvas-end tabindex='-1" id="offcanvasbody"></div>
     <!--first section-->
     <main class="py-5">
         <!--first section of main-->
@@ -87,9 +53,8 @@
                         <a href="#home" class="spcla">Try Dropbox free </a>
                     </div>
                     <div class="main-mutlimedia col-md-6">
-                        <video id="vedio-main"
-                            src="assets/main-vedio.webm"
-                            type="video/webm" autoplay loop muted></video>
+                        <video id="vedio-main" src="assets/main-vedio.webm" type="video/webm" autoplay loop
+                            muted></video>
                     </div>
                 </div>
             </div>
@@ -112,14 +77,12 @@
         <!--multimedia section & final section of main-->
         <section class="multimedia">
             <div class="floating-media">
-                <video class="mul-left"
-                    src="assets/vedio-in-main.webm"
-                    type="video/webm" autoplay loop></video>
+                <video class="mul-left" src="assets/vedio-in-main.webm" type="video/webm" autoplay loop></video>
             </div>
             <div class="image-div">
                 <img class="mul-right"
                     src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/en-us/test/homepageredesign2024/dash-image-1800x2160.png?id=aa947c66-d522-4b18-acce-9849eacf5dba&width=1920&output_type=webp"
-                    alt="img" id="img"loading = "lazy" >
+                    alt="img" id="img" loading="lazy">
             </div>
         </section>
     </main>
@@ -149,12 +112,12 @@
             <div class="floating-media">
                 <img class="mul-left"
                     src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/en-us/index/april-2025-launch/feature-highlight/pv-feature2-1280x800.png?id=d0e99d43-f243-4a0c-83b9-b7840b017288&width=1280&output_type=webp"
-                    alt="img" loading = "lazy">
+                    alt="img" loading="lazy">
             </div>
             <div class="image-div">
                 <img class="mul-right"
                     src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/en-us/index/april-2025-launch/feature-highlight/backasset-feature2-900-1200.png?id=72ec06b3-115c-4ad5-8f8a-9c9345094f93&output_type=webp"
-                    alt="img" loading = "lazy">
+                    alt="img" loading="lazy">
             </div>
         </section>
         <!--third section of second main-->
@@ -179,12 +142,12 @@
             <div class="floating-media">
                 <img class="mul-left"
                     src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/en-us/index/april-2025-launch/feature-highlight/pv-feature3-1280x800.png?id=a149b360-c2e6-4cbb-aee0-441f915e1603&width=1280&output_type=webp"
-                    alt="img"loading = "lazy">
+                    alt="img" loading="lazy">
             </div>
             <div class="image-div">
                 <img class="mul-right"
                     src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/en-us/index/april-2025-launch/feature-highlight/backasset-feature3-900-1200.png?id=77870628-9827-403f-911d-cb63c32d83aa&output_type=webp"
-                    alt="img"loading = "lazy">
+                    alt="img" loading="lazy">
             </div>
         </section>
         <!--fifth section of second main-->
@@ -214,22 +177,22 @@
                 <div id="img-container1">
                     <img id="img1"
                         src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/en-us/test/homepageredesign2024/security/hero/security-left-1.png?id=a9586e97-cdca-47f1-84f6-8e1b8492c225&output_type=webp"
-                        alt="img" loading = "lazy">
+                        alt="img" loading="lazy">
                 </div>
                 <div id="img-container2">
                     <img id="img2"
                         src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/en-us/test/homepageredesign2024/security/hero/security-left-2.png?id=c2b49cbb-0530-4d59-83b0-a04e82bb6cd4&output_type=webp"
-                        alt="img"loading = "lazy">
+                        alt="img" loading="lazy">
                 </div>
                 <div id="img-container3">
                     <img id="img3"
                         src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/en-us/test/homepageredesign2024/security/hero/security-left-3.png?id=add2f4d9-c3c9-4e43-ad3b-9dfbba483c43&output_type=webp"
-                        alt="img"loading = "lazy">
+                        alt="img" loading="lazy">
                 </div>
                 <div id="img-container4">
                     <img id="img4"
                         src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/en-us/test/homepageredesign2024/security/hero/permissions.png?id=89a89ccc-4eb8-4dd9-8cb3-4897f80c7f36&output_type=webp"
-                        alt="img"loading = "lazy">
+                        alt="img" loading="lazy">
                 </div>
             </section>
             <!--sections inside of fifth section-->
@@ -239,7 +202,7 @@
                         <div class="card-image">
                             <img class="card-images"
                                 src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/en-us/test/homepageredesign2024/security/interview-cards/BrianThumb.png?id=ad81b907-369a-439e-b7f7-1c52d1061618&output_type=webp"
-                                alt="img"loading = "lazy">
+                                alt="img" loading="lazy">
                         </div>
                         <div class="card-content">
                             <p class="card-subheading">Testimonial</p>
@@ -252,7 +215,7 @@
                     <div class="testimonial-card">
                         <div class="card-image"><img class="card-images"
                                 src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/en-us/test/homepageredesign2024/security/interview-cards/JustinThumb.png?id=9e7c8793-8282-4398-a9d0-b1f1a803f10a&output_type=webp"
-                                alt="img"loading = "lazy"></div>
+                                alt="img" loading="lazy"></div>
                         <div class="card-content">
                             <p class="card-subheading">Testimonial</p>
                             <h2>"Seriously Impressive security features"</h2>
@@ -263,7 +226,7 @@
                     <div class="testimonial-card">
                         <div class="card-image"><img class="card-images"
                                 src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/en-us/test/homepageredesign2024/security/interview-cards/SecurityThumb.png?id=9b20ffce-4e40-4d57-9ac1-6173cb71473e&output_type=webp"
-                                alt="img"loading = "lazy"></div>
+                                alt="img" loading="lazy"></div>
                         <div class="card-content">
                             <p class="card-subheading">Testimonial</p>
                             <h2>"How do you enhance security and keep productivity reasonable?"</h2>
@@ -281,21 +244,21 @@
                 <div class="ticker-wrapper">
                     <ul class="ticker">
                         <li><img src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/en-us/test/homepageredesign2024/security/logos/figma-wordmark-150x150.svg?id=73389de4-ced9-4caf-8731-06117a2de436"
-                                alt="img"loading = "lazy"></li>
+                                alt="img" loading="lazy"></li>
                         <li><img src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/en-us/test/homepageredesign2024/security/logos/greenhouse-wordmark-150x150.svg?id=ed25611f-1b3f-487f-bdb3-9efaf691794b"
-                                alt="img"loading = "lazy"></li>
+                                alt="img" loading="lazy"></li>
                         <li><img src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/en-us/test/homepageredesign2024/security/logos/hydro-flask-wordmark-150x150.svg?id=506a62fe-2006-4e2c-8f77-46e4540a6f4c"
-                                alt="img"loading = "lazy"></li>
+                                alt="img" loading="lazy"></li>
                         <li><img src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/en-us/test/homepageredesign2024/security/logos/jamf-wordmark-150x150.svg?id=de5cfc87-e306-4921-85ba-f86ada8508e8"
-                                alt="img"loading = "lazy"></li>
+                                alt="img" loading="lazy"></li>
                         <li><img src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/en-us/test/homepageredesign2024/security/logos/marykay-wordmark-150x150.svg?id=3cac7763-007c-4b6a-b7c2-0c349ee1d5b6"
-                                alt="img"loading = "lazy"></li>
+                                alt="img" loading="lazy"></li>
                         <li><img src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/en-us/test/homepageredesign2024/security/logos/mclaren-racing-wordmark-150x150.svg?id=fbc6b1a8-08d1-4484-8466-81233b13842e"
-                                alt="img"loading = "lazy"></li>
+                                alt="img" loading="lazy"></li>
                         <li><img src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/en-us/test/homepageredesign2024/security/logos/sundance-wordmark-150x150.svg?id=29f99860-d5ac-4087-a4b1-48336d06050c"
-                                alt="img"loading = "lazy"></li>
+                                alt="img" loading="lazy"></li>
                         <li><img src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/en-us/test/homepageredesign2024/security/logos/wag-wordmark-150x150.svg?id=68270282-bc75-4285-9c56-07fc2a08fb00"
-                                alt="img"loading = "lazy"></li>
+                                alt="img" loading="lazy"></li>
                     </ul>
                 </div>
                 <div class="ticker-control"></div>
@@ -310,7 +273,7 @@
                     <div class="card-image-industry">
                         <img class="card-images-industry"
                             src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/en-us/business/solutions/construction/construction-hero@2x.jpg?id=dbfc08de-234c-40af-949d-7e176ad7d582&width=1920&output_type=webp"
-                            alt="img"loading = "lazy">
+                            alt="img" loading="lazy">
                     </div>
                     <div class="card-content-industry">
                         <h2>Construction</h2>
@@ -323,7 +286,7 @@
                     <div class="card-image-industry">
                         <img class="card-images-industry"
                             src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/en-us/enterprise/creative-tools/The-Luupe-Genya-Oneall.jpg?id=bc0d3114-b68a-41e7-837b-262d86f2d472&output_type=webp"
-                            alt="img"loading = "lazy">
+                            alt="img" loading="lazy">
                     </div>
                     <div class="card-content-industry">
                         <h2>Media</h2>
@@ -335,7 +298,7 @@
                     <div class="card-image-industry">
                         <img class="card-images-industry"
                             src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/en-us/business/solutions/technology/GettyImages-1139238082.jpg?id=7e97fb44-2356-46b7-8f3d-621a5f98072e&width=1920&output_type=webp"
-                            alt="img"loading = "lazy">
+                            alt="img" loading="lazy">
                     </div>
                     <div class="card-content-industry">
                         <h2>Technology</h2>
@@ -348,7 +311,7 @@
                     <div class="card-image-industry">
                         <img class="card-images-industry"
                             src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/en-us/business/solutions/professional-services/etgcNMmB.jpeg?id=e7016484-98bf-4757-acad-25618e33788e&width=1920&output_type=webp"
-                            alt="img"loading = "lazy">
+                            alt="img" loading="lazy">
                     </div>
                     <div class="card-content-industry">
                         <h2>Professional service</h2>
@@ -361,7 +324,7 @@
                     <div class="card-image-industry">
                         <img class="card-images-industry"
                             src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/en-us/business/solutions/manufacturing/GettyImages-900253108.jpg?id=560cbf20-b4fc-4ec9-8769-8a5e9ad1b223&width=1920&output_type=webp"
-                            alt="img"loading = "lazy">
+                            alt="img" loading="lazy">
                     </div>
                     <div class="card-content-industry">
                         <h2>Manufacturing</h2>
@@ -374,7 +337,7 @@
                     <div class="card-image-industry">
                         <img class="card-images-industry"
                             src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/en-us/education/education-hero@2x.jpg?id=40129999-5c0d-45fc-800e-134eecfd175e&width=1920&output_type=webp"
-                            alt="img"loading = "lazy">
+                            alt="img" loading="lazy">
                     </div>
                     <div class="card-content-industry">
                         <h2>Education</h2>
@@ -395,7 +358,7 @@
                 <div class="col">
                     <div class="card">
                         <img src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/en-us/test/homepageredesign2024/blog-cards/Asset-Distraction-Article.png?id=13349693-d080-4ae6-8498-7b58b46dfeb9&output_type=webp"
-                            class="card-img-top" alt="img"loading = "lazy">
+                            class="card-img-top" alt="img" loading="lazy">
                         <div class="card-body">
                             <p>Article</p>
                             <h3 class="card-title">Study: Here's how many hours we lose to distraxtion - and how to get
@@ -410,7 +373,7 @@
                 <div class="col">
                     <div class="card">
                         <img src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/en-us/test/homepageredesign2024/blog-cards/Asset-McLaren-Article.png?id=eb21f94b-ce63-462f-928a-e30761ba9321&output_type=webp"
-                            class="card-img-top" alt="img"loading = "lazy">
+                            class="card-img-top" alt="img" loading="lazy">
                         <div class="card-body">
                             <p>Article</p>
                             <h3 class="card-title">Dropbox teams up with McLaren Racing as an Official Technology Parter
@@ -424,7 +387,7 @@
                 <div class="col">
                     <div class="card">
                         <img src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/en-us/test/homepageredesign2024/blog-cards/Asset-Photo-Sharing-Article.png?id=3d76b7bb-6145-4f8d-87cf-d156eff5de2d&output_type=webp"
-                            class="card-img-top" alt="img"loading = "lazy">
+                            class="card-img-top" alt="img" loading="lazy">
                         <div class="card-body">
                             <p>Article</p>
                             <h3 class="card-title">The best way to share photos with family and friends</h3>
@@ -544,10 +507,10 @@
             <a href="https://www.twitter.com/" target="_blank" rel="noopener" aria-label="twitter">
                 <i class="bi bi-twitter"></i>
             </a>
-            <a href="https://www.facebook.com/" target="_blank"  rel="noopener" aria-label="facebook">
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="facebook">
                 <i class="bi bi-facebook"></i>
             </a>
-            <a href="https://www.youtube.com/" target="_blank"rel="noopener" aria-label="youtube" >
+            <a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="youtube">
                 <i class="bi bi-youtube"></i>
             </a>
         </div>
@@ -555,8 +518,8 @@
         <div class="lang"><i class="bi bi-globe"></i><a href="#">English (United States)</a></div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-        crossorigin="anonymous" defer></script>
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"
+        defer></script>
 </body>
 
 </html>
