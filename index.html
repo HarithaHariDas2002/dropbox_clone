@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Clone of Dropbox">
+    <title>Dropbox.com</title>
+    <link rel="stylesheet" href="style.css" media="all">
+    <script src="script.js" defer></script>
+    <link rel="icon" href="assets/logo.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet" media="all">
+    <link media="all" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <!--header-->
+    <nav class="navbar bg-white fixed-top shadow-sm">
+        <div class="navDiv">
+            <div class="col-md-6 logo-container">
+                <img id="logo" src="assets/logo.png" alt="Dropbox logo">
+                <h3 id="logo-text">Dropbox</h3>
+            </div>
+
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link " href="#lang" aria-label="lang" id="lang-icon"><i class="bi bi-globe"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sign up</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Log in</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-primary me-3 mb-4" type="button" id="nav-btn">Get started</a>
+                </li>
+                <li id="toggler">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Skills</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Achievements</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Contact Me</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--first section-->
+    <main class="py-5">
+        <!--first section of main-->
+        <div class="container">
+            <div class="row">
+                <div class="main-container">
+                    <div class="main-content col-md-6 ">
+                        <h1>Find anything. Protect everything.</h1>
+                        <p>Find, organize, and protect your work with Dropbox Dash. Now with advanced search for video,
+                            images, and team members—plus generative AI capabilities across even more connected apps.
+                        </p>
+                        <a class="btn btn-primary me-3 mb-4" href="#home">What's new with Dash</a>
+                        <a href="#home" class="spcla">Try Dropbox free </a>
+                    </div>
+                    <div class="main-mutlimedia col-md-6">
+                        <video id="vedio-main"
+                            src="assets/main-vedio.webm"
+                            type="video/webm" autoplay loop muted></video>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--second section of main-->
+        <section class="learnmore-contents">
+            <div class="pill-permission">
+                <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock"
+                        viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M8 0a4 4 0 0 1 4 4v2.05a2.5 2.5 0 0 1 2 2.45v5a2.5 2.5 0 0 1-2.5 2.5h-7A2.5 2.5 0 0 1 2 13.5v-5a2.5 2.5 0 0 1 2-2.45V4a4 4 0 0 1 4-4M4.5 7A1.5 1.5 0 0 0 3 8.5v5A1.5 1.5 0 0 0 4.5 15h7a1.5 1.5 0 0 0 1.5-1.5v-5A1.5 1.5 0 0 0 11.5 7zM8 1a3 3 0 0 0-3 3v2h6V4a3 3 0 0 0-3-3" />
+                    </svg> Permmissions</p>
+            </div>
+            <h2>Protect all your content</h2>
+            <p>Dash makes it easy to find files across apps and safeguard sensitive content. With AI-powered
+                search
+                and universal access controls, your team stays connected, efficient, and secure.</p>
+            <button class="learnmore">Learn more</button>
+        </section>
+        <!--multimedia section & final section of main-->
+        <section class="multimedia">
+            <div class="floating-media">
+                <video class="mul-left"
+                    src="assets/vedio-in-main.webm"
+                    type="video/webm" autoplay loop></video>
+            </div>
+            <div class="image-div">
+                <img class="mul-right"
+                    src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/en-us/test/homepageredesign2024/dash-image-1800x2160.png?id=aa947c66-d522-4b18-acce-9849eacf5dba&width=1920&output_type=webp"
+                    alt="img" id="img"loading = "lazy" >
+            </div>
+        </section>
+    </main>
+    <!--second main section-->
+    <section class="after-main">
+        <!--first section of second main-->
+        <section class="learnmore-contents">
+            <div class="pill-conent">
+                <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-folder" viewBox="0 0 16 16">
+                        <path
+                            d="M.54 3.87.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3h3.982a2 2 0 0 1 1.992 2.181l-.637 7A2 2 0 0 1 13.174 14H2.826a2 2 0 0 1-1.991-1.819l-.637-7a2 2 0 0 1 .342-1.31zM2.19 4a1 1 0 0 0-.996 1.09l.637 7a1 1 0 0 0 .995.91h10.348a1 1 0 0 0 .995-.91l.637-7A1 1 0 0 0 13.81 4zm4.69-1.707A1 1 0 0 0 6.172 2H2.5a1 1 0 0 0-1 .981l.006.139q.323-.119.684-.12h5.396z" />
+                    </svg> Content management </p>
+            </div>
+            <h2>Stay organized and on track</h2>
+            <p>Smart organization and suggestions, natural language search, and seamless integrations mean
+                everything is easy to find and intuitive to manage—all within Dropbox cloud storage, so your team
+                can focus on their work.</p>
+            <div class="learnmore-btn">
+                <button class="learnmore">Learn more</button>
+                <a href="#" class="spcla">Get started free </a>
+            </div>
+
+        </section>
+        <!--second section of second main-->
+        <section class="multimedia">
+            <div class="floating-media">
+                <img class="mul-left"
+                    src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/en-us/index/april-2025-launch/feature-highlight/pv-feature2-1280x800.png?id=d0e99d43-f243-4a0c-83b9-b7840b017288&width=1280&output_type=webp"
+                    alt="img" loading = "lazy">
+            </div>
+            <div class="image-div">
+                <img class="mul-right"
+                    src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/en-us/index/april-2025-launch/feature-highlight/backasset-feature2-900-1200.png?id=72ec06b3-115c-4ad5-8f8a-9c9345094f93&output_type=webp"
+                    alt="img" loading = "lazy">
+            </div>
+        </section>
+        <!--third section of second main-->
+        <section class="learnmore-contents">
+            <div class="pill-collab">
+                <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-people-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5" />
+                    </svg> Collaboration </p>
+            </div>
+            <h2>Instant sharing keeps work flowing</h2>
+            <p>Secure links, real-time syncing, and large file transfers keep your team and partners connected so
+                collaboration stays seamless.</p>
+            <div class="learnmore-btn">
+                <button class="learnmore">Learn more</button>
+                <a href="#" class="spcla">Get started free </a>
+            </div>
+        </section>
+        <!--fourth section of second main-->
+        <section class="multimedia">
+            <div class="floating-media">
+                <img class="mul-left"
+                    src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/en-us/index/april-2025-launch/feature-highlight/pv-feature3-1280x800.png?id=a149b360-c2e6-4cbb-aee0-441f915e1603&width=1280&output_type=webp"
+                    alt="img"loading = "lazy">
+            </div>
+            <div class="image-div">
+                <img class="mul-right"
+                    src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/en-us/index/april-2025-launch/feature-highlight/backasset-feature3-900-1200.png?id=77870628-9827-403f-911d-cb63c32d83aa&output_type=webp"
+                    alt="img"loading = "lazy">
+            </div>
+        </section>
+        <!--fifth section of second main-->
+        <section class="sectionWithBg">
+            <!--sections inside of fifth section with bg of dark and animations-->
+            <section class="learnmore-contents-inBg">
+                <p></p><svg viewBox="0 0 24 24" fill="none" class="dig-PictogramIcon" width="64" height="80"
+                    focusable="false" role="presentation">
+                    <path
+                        d="M15 9V7.25C15 5.768 14.436 4 11.75 4S8.5 5.768 8.5 7.25V9H6v7.75A3.254 3.254 0 0 0 9.25 20h5a3.254 3.254 0 0 0 3.25-3.25V9H15Zm-5-1.75c0-1.292.458-1.75 1.75-1.75s1.75.458 1.75 1.75V9H10V7.25Zm6 9.5a1.75 1.75 0 0 1-1.75 1.75h-5a1.75 1.75 0 0 1-1.75-1.75V10.5H16v6.25Z"
+                        fill="currentColor" vector-effect="non-scaling-stroke"></path>
+                    <path
+                        d="M11 15.366V17h1.5v-1.634a1.603 1.603 0 0 0 1-1.616A1.626 1.626 0 0 0 11.75 12 1.626 1.626 0 0 0 10 13.75a1.603 1.603 0 0 0 1 1.616Z"
+                        fill="currentColor" vector-effect="non-scaling-stroke"></path>
+                </svg>
+                </p>
+                <h2>Security never comes second</h2>
+                <p>From industry-leading encryption and tamper-proof documents to version history and recovery,
+                    Dropbox keeps your intellectual property safe and never sells or shares your data</p>
+                <div class="learnmore-btn-inBg">
+                    <button class="learnmore-inBg">Get started free </button>
+                    <a href="#" class="spcla-inBg">Learn more </a>
+                </div>
+            </section>
+            <!--sections inside of fifth section-->
+            <section class="stacking-img">
+                <div id="img-container1">
+                    <img id="img1"
+                        src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/en-us/test/homepageredesign2024/security/hero/security-left-1.png?id=a9586e97-cdca-47f1-84f6-8e1b8492c225&output_type=webp"
+                        alt="img" loading = "lazy">
+                </div>
+                <div id="img-container2">
+                    <img id="img2"
+                        src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/en-us/test/homepageredesign2024/security/hero/security-left-2.png?id=c2b49cbb-0530-4d59-83b0-a04e82bb6cd4&output_type=webp"
+                        alt="img"loading = "lazy">
+                </div>
+                <div id="img-container3">
+                    <img id="img3"
+                        src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/en-us/test/homepageredesign2024/security/hero/security-left-3.png?id=add2f4d9-c3c9-4e43-ad3b-9dfbba483c43&output_type=webp"
+                        alt="img"loading = "lazy">
+                </div>
+                <div id="img-container4">
+                    <img id="img4"
+                        src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/en-us/test/homepageredesign2024/security/hero/permissions.png?id=89a89ccc-4eb8-4dd9-8cb3-4897f80c7f36&output_type=webp"
+                        alt="img"loading = "lazy">
+                </div>
+            </section>
+            <!--sections inside of fifth section-->
+            <section class="scrollable-div">
+                <div class="cards">
+                    <div class="testimonial-card">
+                        <div class="card-image">
+                            <img class="card-images"
+                                src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/en-us/test/homepageredesign2024/security/interview-cards/BrianThumb.png?id=ad81b907-369a-439e-b7f7-1c52d1061618&output_type=webp"
+                                alt="img"loading = "lazy">
+                        </div>
+                        <div class="card-content">
+                            <p class="card-subheading">Testimonial</p>
+                            <h2>"The security of knowing our information is safe."</h2>
+                            <p>Customer Bryan Chandler reveals how his team uses Dropbox to oragnize and share files
+                                securely.</p>
+                            <a href="#">Watch testimonial</a>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="card-image"><img class="card-images"
+                                src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/en-us/test/homepageredesign2024/security/interview-cards/JustinThumb.png?id=9e7c8793-8282-4398-a9d0-b1f1a803f10a&output_type=webp"
+                                alt="img"loading = "lazy"></div>
+                        <div class="card-content">
+                            <p class="card-subheading">Testimonial</p>
+                            <h2>"Seriously Impressive security features"</h2>
+                            <p>Tech influencer Justin Tse discusses why he trusts Dropbox to keep his content safe.</p>
+                            <a href="#">Watch testimonial</a>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="card-image"><img class="card-images"
+                                src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/en-us/test/homepageredesign2024/security/interview-cards/SecurityThumb.png?id=9b20ffce-4e40-4d57-9ac1-6173cb71473e&output_type=webp"
+                                alt="img"loading = "lazy"></div>
+                        <div class="card-content">
+                            <p class="card-subheading">Testimonial</p>
+                            <h2>"How do you enhance security and keep productivity reasonable?"</h2>
+                            <p>Your company's sharing content with collaboration all over the world. Are you in contorl?
+                            </p>
+                            <a href="#">Watch testimonial</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section-with-ticker">
+                <div class="ticker-heading">
+                    <p>Trusted by the biggest companies in the world</p>
+                </div>
+                <div class="ticker-wrapper">
+                    <ul class="ticker">
+                        <li><img src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/en-us/test/homepageredesign2024/security/logos/figma-wordmark-150x150.svg?id=73389de4-ced9-4caf-8731-06117a2de436"
+                                alt="img"loading = "lazy"></li>
+                        <li><img src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/en-us/test/homepageredesign2024/security/logos/greenhouse-wordmark-150x150.svg?id=ed25611f-1b3f-487f-bdb3-9efaf691794b"
+                                alt="img"loading = "lazy"></li>
+                        <li><img src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/en-us/test/homepageredesign2024/security/logos/hydro-flask-wordmark-150x150.svg?id=506a62fe-2006-4e2c-8f77-46e4540a6f4c"
+                                alt="img"loading = "lazy"></li>
+                        <li><img src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/en-us/test/homepageredesign2024/security/logos/jamf-wordmark-150x150.svg?id=de5cfc87-e306-4921-85ba-f86ada8508e8"
+                                alt="img"loading = "lazy"></li>
+                        <li><img src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/en-us/test/homepageredesign2024/security/logos/marykay-wordmark-150x150.svg?id=3cac7763-007c-4b6a-b7c2-0c349ee1d5b6"
+                                alt="img"loading = "lazy"></li>
+                        <li><img src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/en-us/test/homepageredesign2024/security/logos/mclaren-racing-wordmark-150x150.svg?id=fbc6b1a8-08d1-4484-8466-81233b13842e"
+                                alt="img"loading = "lazy"></li>
+                        <li><img src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/en-us/test/homepageredesign2024/security/logos/sundance-wordmark-150x150.svg?id=29f99860-d5ac-4087-a4b1-48336d06050c"
+                                alt="img"loading = "lazy"></li>
+                        <li><img src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/en-us/test/homepageredesign2024/security/logos/wag-wordmark-150x150.svg?id=68270282-bc75-4285-9c56-07fc2a08fb00"
+                                alt="img"loading = "lazy"></li>
+                    </ul>
+                </div>
+                <div class="ticker-control"></div>
+            </section>
+        </section>
+        <section class="industries">
+            <div id="industries-heading">
+                <h2>Dropbox empowerment across industries</h2>
+            </div>
+            <div class="grid-industries">
+                <div class="industries-card">
+                    <div class="card-image-industry">
+                        <img class="card-images-industry"
+                            src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/en-us/business/solutions/construction/construction-hero@2x.jpg?id=dbfc08de-234c-40af-949d-7e176ad7d582&width=1920&output_type=webp"
+                            alt="img"loading = "lazy">
+                    </div>
+                    <div class="card-content-industry">
+                        <h2>Construction</h2>
+                        <p>With Dropbox for teams, you can store, access, preview, edit and transfer CAD, BIM, PDF and
+                            visual content files from anywhere</p>
+                        <a href="#" class="spcla">Learn more</a>
+                    </div>
+                </div>
+                <div class="industries-card">
+                    <div class="card-image-industry">
+                        <img class="card-images-industry"
+                            src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/en-us/enterprise/creative-tools/The-Luupe-Genya-Oneall.jpg?id=bc0d3114-b68a-41e7-837b-262d86f2d472&output_type=webp"
+                            alt="img"loading = "lazy">
+                    </div>
+                    <div class="card-content-industry">
+                        <h2>Media</h2>
+                        <p>Created a flexible media workspace that connects your teams, content, and tools together.</p>
+                        <a href="#" class="spcla">Learn more</a>
+                    </div>
+                </div>
+                <div class="industries-card">
+                    <div class="card-image-industry">
+                        <img class="card-images-industry"
+                            src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/en-us/business/solutions/technology/GettyImages-1139238082.jpg?id=7e97fb44-2356-46b7-8f3d-621a5f98072e&width=1920&output_type=webp"
+                            alt="img"loading = "lazy">
+                    </div>
+                    <div class="card-content-industry">
+                        <h2>Technology</h2>
+                        <p>Product ideation to development, steramline technology workflows so you can focus on turning
+                            grat ideas into products people love.</p>
+                        <a href="#" class="spcla">Learn more</a>
+                    </div>
+                </div>
+                <div class="industries-card">
+                    <div class="card-image-industry">
+                        <img class="card-images-industry"
+                            src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/en-us/business/solutions/professional-services/etgcNMmB.jpeg?id=e7016484-98bf-4757-acad-25618e33788e&width=1920&output_type=webp"
+                            alt="img"loading = "lazy">
+                    </div>
+                    <div class="card-content-industry">
+                        <h2>Professional service</h2>
+                        <p>Make clients happier with easy collaboration, boosted productivity, and one organized place
+                            to get things done.</p>
+                        <a href="#" class="spcla">Learn more</a>
+                    </div>
+                </div>
+                <div class="industries-card">
+                    <div class="card-image-industry">
+                        <img class="card-images-industry"
+                            src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/en-us/business/solutions/manufacturing/GettyImages-900253108.jpg?id=560cbf20-b4fc-4ec9-8769-8a5e9ad1b223&width=1920&output_type=webp"
+                            alt="img"loading = "lazy">
+                    </div>
+                    <div class="card-content-industry">
+                        <h2>Manufacturing</h2>
+                        <p>Design and engineering teams easily collaborate, managing complex reviewa abd sharing large
+                            files seamlessly.</p>
+                        <a href="#" class="spcla">Learn more</a>
+                    </div>
+                </div>
+                <div class="industries-card">
+                    <div class="card-image-industry">
+                        <img class="card-images-industry"
+                            src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/en-us/education/education-hero@2x.jpg?id=40129999-5c0d-45fc-800e-134eecfd175e&width=1920&output_type=webp"
+                            alt="img"loading = "lazy">
+                    </div>
+                    <div class="card-content-industry">
+                        <h2>Education</h2>
+                        <p>Power students learning, faculty research, and satff operations on Dropbox Education's secure
+                            cloud collaboration platform.</p>
+                        <a href="#" class="spcla">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <section class="last">
+        <div class="last-heading">
+            <h2>Discover, learning,thrive with Dropbox</h2>
+        </div>
+        <div class="last-content">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card">
+                        <img src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/en-us/test/homepageredesign2024/blog-cards/Asset-Distraction-Article.png?id=13349693-d080-4ae6-8498-7b58b46dfeb9&output_type=webp"
+                            class="card-img-top" alt="img"loading = "lazy">
+                        <div class="card-body">
+                            <p>Article</p>
+                            <h3 class="card-title">Study: Here's how many hours we lose to distraxtion - and how to get
+                                our focus back</h3>
+                            <p class="card-text">For our studies, Economist Impact included knowledge workers globally-
+                                and found that, no matter where people works, there's a significant cost to lost focus
+                                around the world.</p>
+                            <a href="#" class="spcla">Read article</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/en-us/test/homepageredesign2024/blog-cards/Asset-McLaren-Article.png?id=eb21f94b-ce63-462f-928a-e30761ba9321&output_type=webp"
+                            class="card-img-top" alt="img"loading = "lazy">
+                        <div class="card-body">
+                            <p>Article</p>
+                            <h3 class="card-title">Dropbox teams up with McLaren Racing as an Official Technology Parter
+                                of McLaren Formula 1 Team</h3>
+                            <p class="card-text">Dropbox brings simplified sahring, collaboration, and organizing to the
+                                McLaren 1 Team.</p>
+                            <a href="#" class="spcla">Read article</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/en-us/test/homepageredesign2024/blog-cards/Asset-Photo-Sharing-Article.png?id=3d76b7bb-6145-4f8d-87cf-d156eff5de2d&output_type=webp"
+                            class="card-img-top" alt="img"loading = "lazy">
+                        <div class="card-body">
+                            <p>Article</p>
+                            <h3 class="card-title">The best way to share photos with family and friends</h3>
+                            <p class="card-text">Don't lose precious photos. SAve them and share with loved ones - for
+                                free. Here's an easy-to-follow guide to shareing and storing photos with Dropbox</p>
+                            <a href="#" class="spcla">Read article</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="viewmore-link">
+                <a href="#">view more resources</a>
+            </div>
+            <div class="note-of-last-section">
+                <p>Please note: The products or features described may not be released yet. The decision to purchase our
+                    services should be made based on features that are currently available.</p>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-black">
+        <div class="links-in-footer">
+            <div class="Dropbox">
+                <ul>
+                    <li>
+                        <p>Dropbox</p>
+                    </li>
+                    <li><a href="#">Desktop app</a></li>
+                    <li><a href="#">Mobile app</a></li>
+                    <li><a href="#">Integrations</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Solutions</a></li>
+                    <li><a href="#">Security</a></li>
+                    <li><a href="#">Early access</a></li>
+                    <li><a href="#">Templates</a></li>
+                    <li><a href="#">Free tools</a></li>
+                </ul>
+            </div>
+            <div class="Products">
+                <ul>
+                    <li>
+                        <p>Products</p>
+                    </li>
+                    <li><a href="#">Plus</a></li>
+                    <li><a href="#">Professional</a></li>
+                    <li><a href="#">Business</a></li>
+                    <li><a href="#">Enterprise</a></li>
+                    <li><a href="#">Dash</a></li>
+                    <li><a href="#">Reclaim.ai</a></li>
+                    <li><a href="#">Dropbox Sign</a></li>
+                    <li><a href="#">DocSend</a></li>
+                    <li><a href="#">Plans</a></li>
+                    <li><a href="#">Product updates</a></li>
+                </ul>
+            </div>
+            <div class="Features">
+                <ul>
+                    <li>
+                        <p>Features</p>
+                    </li>
+                    <li><a href="#">Send large files</a></li>
+                    <li><a href="#">Send long videos</a></li>
+                    <li><a href="#">Cloud photo storage</a></li>
+                    <li><a href="#">Secure file transfer</a></li>
+                    <li><a href="#">Password manager</a></li>
+                    <li><a href="#">Cloud backup</a></li>
+                    <li><a href="#">Password manager</a></li>
+                    <li><a href="#">Cloud backups</a></li>
+                    <li><a href="#">Edit PDFs</a></li>
+                    <li><a href="#">Electronic signature</a></li>
+                    <li><a href="#">Convert to PDF</a></li>
+                </ul>
+            </div>
+            <div class="Supports">
+                <ul>
+                    <li>
+                        <p>Supports</p>
+                    </li>
+                    <li><a href="#">Help center</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Privacy & terms</a></li>
+                    <li><a href="#">Cookie policy</a></li>
+                    <li><a href="#">Cookies & CCPA preferences</a></li>
+                    <li><a href="#">AI principles</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                    <li><a href="#">Learning resources</a></li>
+                </ul>
+            </div>
+            <div class="Resources">
+                <ul>
+                    <li>
+                        <p>Resourrces</p>
+                    </li>
+                    <li><a href="#">Bolg</a></li>
+                    <li><a href="#">Customer stories</a></li>
+                    <li><a href="#">Resource library</a></li>
+                    <li><a href="#">Developers</a></li>
+                    <li><a href="#">Community forums</a></li>
+                    <li><a href="#">Referrals</a></li>
+                    <li><a href="#">Reselelr partners</a></li>
+                    <li><a href="#">Integration partners</a></li>
+                    <li><a href="#">Find a partner</a></li>
+                </ul>
+            </div>
+            <div class="Company">
+                <ul>
+                    <li>
+                        <p>Company</p>
+                    </li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Jobs</a></li>
+                    <li><a href="#">Investor relations</a></li>
+                    <li><a href="#">Our impact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.twitter.com/" target="_blank" rel="noopener" aria-label="twitter">
+                <i class="bi bi-twitter"></i>
+            </a>
+            <a href="https://www.facebook.com/" target="_blank"  rel="noopener" aria-label="facebook">
+                <i class="bi bi-facebook"></i>
+            </a>
+            <a href="https://www.youtube.com/" target="_blank"rel="noopener" aria-label="youtube" >
+                <i class="bi bi-youtube"></i>
+            </a>
+        </div>
+        <hr>
+        <div class="lang"><i class="bi bi-globe"></i><a href="#">English (United States)</a></div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous" defer></script>
+</body>
+
+</html>
